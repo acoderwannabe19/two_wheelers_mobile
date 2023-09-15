@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "sn.ept.git.dic2.projetjeemobile"
-        minSdk 30
+        minSdk 31
         targetSdk 31
         versionCode 1
         versionName "1.0"

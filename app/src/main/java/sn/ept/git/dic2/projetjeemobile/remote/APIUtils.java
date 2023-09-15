@@ -20,7 +20,7 @@ public class APIUtils {
     private APIUtils(){
     };
 
-    public static final String API_URL = "http://172.20.10.4:8080/projetJEE-1.0-SNAPSHOT/api/";
+    public static final String API_URL = "http://10.0.2.2:8080/projetJEE-1.0-SNAPSHOT/api/";
 
     public static PersonneService getPersonneService(){
         return RetrofitClient.getClient(API_URL).create(PersonneService.class);
