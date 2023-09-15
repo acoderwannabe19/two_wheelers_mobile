@@ -59,4 +59,5 @@
     <string name="orderNumber">Order number</string>
     <string name="discount">Discount</string>
     <string name="channel_description">Notify the user when the stock is about to finish.</string>
+    <string name="twooWheelers">Two Wheelers</string>
 </resources>
