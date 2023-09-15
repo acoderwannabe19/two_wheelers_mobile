@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">sn.ept.git.dic2.projetjeemobile</domain>
+    </domain-config>
+</network-security-config>

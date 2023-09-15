@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ClientActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/txtUId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtUId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/txtClientFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/firstName"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtClientLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lastName"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtClientTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                />
+
+            <TextView
+                android:id="@+id/txtClientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                />
+
+            <TextView
+                android:id="@+id/txtClientAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adresse"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtClientVille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ville"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientVille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtClientEtat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etat"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientEtat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtClientCodeZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/code_zip"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtClientCodeZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                />
+
+            <Button
+                android:id="@+id/btnDel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

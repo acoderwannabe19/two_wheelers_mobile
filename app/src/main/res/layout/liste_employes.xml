@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtEmployeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtEmployeFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fieldVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeId"
+        />
+
+    <TextView
+        android:id="@+id/txtEmployeLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fieldVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeFirstName" />
+
+
+
+
+    <TextView
+        android:id="@+id/txtEmployeTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/telephone"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeLastName" />
+
+    <TextView
+        android:id="@+id/txtEmployeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/email"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeTelephone" />
+
+    <TextView
+        android:id="@+id/txtEmployeAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/adresse"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeEmail" />
+
+    <TextView
+        android:id="@+id/txtEmployeVille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/ville"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeAdresse" />
+
+    <TextView
+        android:id="@+id/txtEmployeEtat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/etat"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeVille" />
+
+    <TextView
+        android:id="@+id/txtEmployeCodeZip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/code_zip"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeEtat" />
+
+    <TextView
+        android:id="@+id/txtEmployeMagasin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeCodeZip"/>
+
+    <TextView
+        android:id="@+id/txtEmployeManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeMagasin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArticleCommandeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/txtLigne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtLigne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/txtArticleCommandeNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/orderNumber"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/commandeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtArticleCommandeQuantite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quantite"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtArticleCommandeQuantite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/txtArticleCommandeRemise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/discount"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtArticleCommandeRemise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/txtArticleCommandePrixDepart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prix"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edtArticleCommandePrixDepart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txtArticleCommandeProduit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/produit"
+                android:textSize="@dimen/normalText"
+                android:layout_marginTop="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/produitSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                />
+
+            <Button
+                android:id="@+id/btnDel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

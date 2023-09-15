@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fieldVertical">3dp</dimen>
+    <dimen name="normalText">20dp</dimen>
+    <dimen name="homeButtonMargin">10dp</dimen>
+</resources>

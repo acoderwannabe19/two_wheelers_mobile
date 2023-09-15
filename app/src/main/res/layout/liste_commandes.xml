@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtCommandeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fieldVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero"
+        />
+
+    <TextView
+        android:id="@+id/txtCommandeDateLivraison"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fieldVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommandeDate" />
+
+
+
+
+    <TextView
+        android:id="@+id/txtCommandeDateLivraisonVoulue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/deliveryDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommandeDateLivraison" />
+
+    <TextView
+        android:id="@+id/txtCommandeStatut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/status"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommandeDateLivraisonVoulue" />
+
+    <TextView
+        android:id="@+id/txtCommandeClientId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/client"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommandeStatut" />
+
+    <TextView
+        android:id="@+id/txtCommandeVendeurId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/seller"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommandeClientId" />
+
+    <TextView
+        android:id="@+id/txtCommandeMagasinId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/fieldVertical"
+        android:text="@string/store"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommandeVendeurId" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
